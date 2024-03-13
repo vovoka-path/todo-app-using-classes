@@ -11,6 +11,6 @@ export class TodoTitle {
     this.element.innerHTML = this.text;
     this.element.classList.add('todo-title');
 
-    parentElement?.append(this.element);
+    parentElement.append(this.element);
   }
 }

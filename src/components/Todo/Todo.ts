@@ -1,9 +1,7 @@
 import { Checkbox } from '../Checkbox/Checkbox';
 import { TodoTitle } from '../TodoTitle/TodoTitle';
 import { Button } from '../Button/Button';
-import { ITodo } from '../../store/TodoStore';
-import todoStore from '../../store/TodoStore';
-
+import todoStore, { ITodo } from '../../store/TodoStore';
 
 export class Todo {
   element: HTMLElement;
@@ -26,7 +24,7 @@ export class Todo {
     const button = new Button('Delete');
     button.render(this.element);
     button.addListener(() => this.remove());
- 
+
     parentElement.append(this.element);
   }
 
