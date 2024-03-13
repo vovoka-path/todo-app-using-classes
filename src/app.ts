@@ -2,8 +2,6 @@ import { Form } from './components/Form/Form';
 import { Todos } from './components/Todos/Todos';
 
 class App {
-  constructor() {}
-
   render() {
     const rootElement = document.querySelector<HTMLDivElement>('#app');
 
